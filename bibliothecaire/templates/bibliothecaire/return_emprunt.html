@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retourner un Emprunt</title>
+</head>
+<body>
+    <h1>Retourner un Emprunt</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Retourner</button>
+    </form>
+    <a href="{% url 'menu_bibliothecaire' %}">Retour au menu</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mettre à jour Emprunteur</title>
+</head>
+<body>
+    <h1>Mettre à jour Emprunteur</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Mettre à jour</button>
+    </form>
+    <a href="{% url 'menu_bibliothecaire' %}">Retour au menu</a>
+</body>
+</html>

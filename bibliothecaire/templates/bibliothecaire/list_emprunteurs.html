@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Emprunteurs</title>
+</head>
+<body>
+    <h1>Liste des Emprunteurs</h1>
+    <ul>
+        {% for emprunteur in emprunteurs %}
+        <li>{{ emprunteur.name }} - {{ emprunteur.email }} - <a href="{% url 'update_emprunteur' emprunteur.pk %}">Mettre à jour</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'menu_bibliothecaire' %}">Retour au menu</a>
+</body>
+</html>

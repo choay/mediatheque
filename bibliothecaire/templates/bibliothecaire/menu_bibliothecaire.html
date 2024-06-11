@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bibliothecaire Menu</title>
+</head>
+<body>
+    <h1>Bibliothecaire Menu</h1>
+    <ul>
+        <li><a href="{% url 'create_emprunteur' %}">Créer un membre-emprunteur</a></li>
+        <li><a href="{% url 'liste_emprunteurs' %}">Afficher la liste des membres</a></li>
+        <li><a href="{% url 'liste_medias' %}">Afficher la liste des médias</a></li>
+        <li><a href="{% url 'add_media' media_type='livre' %}">Ajouter un livre</a></li>
+        <li><a href="{% url 'add_media' media_type='cd' %}">Ajouter un CD</a></li>
+        <li><a href="{% url 'add_media' media_type='dvd' %}">Ajouter un DVD</a></li>
+        <li><a href="{% url 'add_media' media_type='jeu' %}">Ajouter un jeu de plateau</a></li>
+    </ul>
+    <a href="{% url 'index' %}">Retour au menu</a>
+</body>
+</html>
